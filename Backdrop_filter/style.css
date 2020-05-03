@@ -1,0 +1,28 @@
+body {
+  min-height: 97vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-image: url("bg-image.jpg");
+}
+
+.container {
+  height: 500px;
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  position: relative;
+}
+
+.box {
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
