@@ -4,16 +4,21 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("bg-image.jpg");
+    background-image: url("drop.jpg");
 }
 .container {
+    position: relative;
     height: 500px;
     width: 350px;
     background-color: rgba(255,255,255,0.6);
     backdrop-filter: blur(7px);
-    position: relative;
 }
 
 .box {
     position: absolute;
+    
+    img 
+    {
+        border-radius: 230px;
+    }
 }
