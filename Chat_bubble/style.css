@@ -24,19 +24,19 @@ body {
   background: #ecadad;
   padding: 0.8rem;
   border-radius: 10px;
-  color: #222;
+  color: #333232;
 }
 
 .talkbubble .bubble::after {
   content: "";
   display: block;
   position: absolute;
-  top: 14px;
-  left: -15px;
   width: 0;
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
   border-right: 16px solid #ecadad;
+  top: 14px;
+  left: -15px;
 }
 /*# sourceMappingURL=style.css.map */

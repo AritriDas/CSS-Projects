@@ -1,3 +1,5 @@
+$bubble_color : rgb(236, 173, 173);
+
 body {
     min-height: 70vh;
     display: flex;
@@ -14,24 +16,22 @@ body {
     .bubble {
         width: 100%;
         position: relative;
-        background: rgb(236, 173, 173);
+        background: $bubble_color;
         padding: 0.8rem;
         border-radius: 10px;
-        color: #222;
+        color: rgb(51, 50, 50);
          
         &::after {
             content: "";
             display: block;
             position: absolute;
-
-            top: 14px;
-            left: -15px;
-
             width: 0;
             height: 0;
             border-top: 8px solid transparent;
             border-bottom: 8px solid transparent;
-            border-right: 16px solid rgb(236, 173, 173);
+            border-right: 16px solid $bubble_color;
+            top: 14px;
+            left: -15px;
         }
     }
 }
