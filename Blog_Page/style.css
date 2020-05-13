@@ -1,0 +1,25 @@
+body {
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -o-linear-gradient(-45deg, rgba(255, 188, 89, 0.73) 0%, rgba(81, 24, 76, 0.88) 100%);
+}
+
+.container {
+  margin: 5rem;
+}
+
+.blog {
+  text-align: justify;
+  width: 70%;
+  margin: auto;
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=style.css.map */

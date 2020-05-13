@@ -1,0 +1,19 @@
+body {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-image: radial-gradient(120deg , rgb(129, 118, 14), rgb(18, 18, 194));
+    background: -o-linear-gradient(-45deg,  rgba(255,188,89,0.73) 0%,rgba(81,24,76,0.88) 100%);
+}
+
+.container {
+    margin:5rem;
+}
+
+.blog {
+    text-align: justify;
+    width: 70%;
+    margin: auto;
+    font-size: 1.2rem;
+}
