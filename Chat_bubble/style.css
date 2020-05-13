@@ -1,0 +1,42 @@
+body {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  background: #f0f0f0;
+}
+
+.talkbubble {
+  width: 450px;
+}
+
+.talkbubble .bubble {
+  width: 100%;
+  position: relative;
+  background: #ecadad;
+  padding: 0.8rem;
+  border-radius: 10px;
+  color: #222;
+}
+
+.talkbubble .bubble::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: -15px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 16px solid #ecadad;
+}
+/*# sourceMappingURL=style.css.map */
