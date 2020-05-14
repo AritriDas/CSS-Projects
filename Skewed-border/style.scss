@@ -9,8 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Courier New', Courier, monospace;
-    background-image: url('bg.jpg');
-    background-size: cover;
+    background: #060c21;
     color: whitesmoke;
 }
 
@@ -28,19 +27,27 @@ body {
         position: relative;
         padding: 1%;
         margin: 2%;
-        background: rgb(39, 39, 39);
+        background: #060c21;
         text-align: center;
         font-size: 0.9rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 300px;
     }
 
     .content {
         position: relative;
          
         h2 {
-            
+            position: absolute;
+            top: -60px;
+            right: 20px;
+            margin: 0;
+            padding: 0;
+            font-size: 10rem;
+            color: rgba(255, 255, 255, 0.05);
+            transition: 0.5s;
         }
     }
 }
