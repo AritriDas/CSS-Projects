@@ -19,6 +19,7 @@ body {
     // display: grid;
     // grid-template-columns: repeat(auto-fill, minmax(260px, 2fr));
     // grid-gap: 0 40px;
+    text-align: center;
     display: flex;
     flex-direction: row;
     flex: auto;
@@ -28,7 +29,6 @@ body {
         padding: 1%;
         margin: 2%;
         background: #060c21;
-        text-align: center;
         font-size: 0.9rem;
         display: flex;
         justify-content: center;
@@ -67,6 +67,16 @@ body {
         p {
             margin: 0;
             padding: 0;
+            color: #fff;
+        }
+
+        a {
+            text-align: center;
+            position: absolute;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 1px solid #fff; 
+            // display: block;
             color: #fff;
         }
     }
