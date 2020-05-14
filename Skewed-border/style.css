@@ -53,6 +53,10 @@ body {
   height: 300px;
 }
 
+.container .box:hover .content h2 {
+  top: -100px;
+}
+
 .container .content {
   position: relative;
 }
@@ -67,5 +71,19 @@ body {
   color: rgba(255, 255, 255, 0.05);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.container .content h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.container .content p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
