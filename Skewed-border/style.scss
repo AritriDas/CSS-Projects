@@ -26,18 +26,18 @@ body {
 
     .box {
         position: relative;
-        padding: 1%;
+        padding: 1.2%;
         margin: 2%;
         background: #060c21;
         font-size: 0.9rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 300px;
+        height: 350px;
 
         &:hover {
             .content h2 {
-                top: -90px;
+                top: -110px;
             }
             .content a {
                 transform: translateY(0);
@@ -106,9 +106,9 @@ body {
         }
 
         h3 {
-            margin: 0 0 10px;
+            margin: 0 0 15px 0;
             padding: 0;
-            font-size: 24px;
+            font-size: 1.4rem;
             font-weight: bolder;
             color: #fff;
         }
