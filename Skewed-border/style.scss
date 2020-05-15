@@ -68,10 +68,27 @@ body {
             background: rgba(255,255,255,0.07);
             pointer-events: none;
         }
-    }
-
-    .container .box:nth-child(1):before {
-        background: linear-gradient(315deg, #ff0057, e64a19);
+        
+        &:nth-child(1) {
+            &:before {
+                background: linear-gradient(315deg, #ff0057, #e64a19);
+            }
+        }
+        &:nth-child(2) {
+            &:before {
+                background: linear-gradient(315deg, rgb(68, 202, 68), #1843b8);
+            }
+        }
+        &:nth-child(3) {
+            &:before {
+                background: linear-gradient(315deg, #aa5d77, #f1ee3d);
+            }
+        }
+        &:nth-child(4) {
+            &:before {
+                background: linear-gradient(315deg, #ff6601, #76d0d3);
+            }
+        }
     }
 
     .content {
