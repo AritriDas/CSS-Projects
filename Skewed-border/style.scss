@@ -39,6 +39,23 @@ body {
             .content h2 {
                 top: -100px;
             }
+            .content a {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            bottom: -2px;
+            left: -2px;
+            right: -2px;
+            background: #fff;
+            z-index: -2;
+            transform: skew(2deg, 2deg);
         }
     }
 
@@ -71,14 +88,22 @@ body {
         }
 
         a {
-            text-align: center;
-            margin: 10px 0 0;
-            // position: absolute;
-            padding: 4px 20px;
+            position: relative;
+            padding: 10px 10px;
+            margin-top: 10px;
             text-decoration: none;
             border: 1px solid #fff; 
-            // display: block;
+            display: inline-block;
             color: #fff;
+            transition: 0.5s;
+            transform: translateY(-40px);
+            opacity: 0;
+            visibility: hidden;
+
+            &:hover {
+                color: #060c21;
+                background: #fff;
+            }
         }
     }
 }

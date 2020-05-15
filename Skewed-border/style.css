@@ -57,6 +57,26 @@ body {
   top: -100px;
 }
 
+.container .box:hover .content a {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.container .box:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: #fff;
+  z-index: -2;
+  -webkit-transform: skew(2deg, 2deg);
+          transform: skew(2deg, 2deg);
+}
+
 .container .content {
   position: relative;
 }
@@ -88,11 +108,23 @@ body {
 }
 
 .container .content a {
-  text-align: center;
-  margin: 10px 0 0;
-  padding: 4px 20px;
+  position: relative;
+  padding: 10px 10px;
+  margin-top: 10px;
   text-decoration: none;
   border: 1px solid #fff;
+  display: inline-block;
   color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .content a:hover {
+  color: #060c21;
+  background: #fff;
 }
 /*# sourceMappingURL=style.css.map */
