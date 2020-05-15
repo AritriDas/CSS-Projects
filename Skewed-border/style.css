@@ -77,6 +77,10 @@ body {
           transform: skew(3deg, 3deg);
 }
 
+.container .container .box:nth-child(1):before {
+  background: linear-gradient(315deg, #ff0057, e64a19);
+}
+
 .container .content {
   position: relative;
 }
