@@ -54,7 +54,7 @@ body {
 }
 
 .container .box:hover .content h2 {
-  top: -100px;
+  top: -90px;
 }
 
 .container .box:hover .content a {
@@ -71,10 +71,10 @@ body {
   bottom: -2px;
   left: -2px;
   right: -2px;
-  background: #fff;
+  background: #e2e1e1;
   z-index: -2;
-  -webkit-transform: skew(2deg, 2deg);
-          transform: skew(2deg, 2deg);
+  -webkit-transform: skew(3deg, 3deg);
+          transform: skew(3deg, 3deg);
 }
 
 .container .content {
@@ -110,7 +110,7 @@ body {
 .container .content a {
   position: relative;
   padding: 10px 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   text-decoration: none;
   border: 1px solid #fff;
   display: inline-block;
