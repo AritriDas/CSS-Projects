@@ -3,4 +3,23 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  font-family: Calibri, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #087a7a;
+  color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
