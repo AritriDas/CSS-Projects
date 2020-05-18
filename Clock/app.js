@@ -8,10 +8,21 @@ function showTime() {
     let minute = date.getMinutes();
     let sec = date.getSeconds();
 
+    hour = addZero(hour);
+    minute = addZero(minute);
+    sec = addZero(sec);
+
 hours.innerHTML = `${hour}`;
 minutes.innerHTML=`${minute}`;
 seconds.innerHTML= `${sec}`;
 
+}
+
+function addZero(time) {
+    if (time < 10)
+        time = '0' + time ;
+
+    return time;
 }
 
 showTime();

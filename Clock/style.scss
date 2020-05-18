@@ -20,7 +20,11 @@ body {
         div {
             position: relative;
             margin: 0 5px;
-            -webkit-box-reflect: below 0.5px linear-gradient(transparent, #0004);
+            -webkit-box-reflect: below 5px linear-gradient(transparent, #0004);
+            // border: 4px solid #127fd6;
+            border-radius: 15px;
+            background: #127fd6;
+            padding: 7px;
 
             span {
                 position: relative;
