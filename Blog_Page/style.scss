@@ -13,7 +13,12 @@ body {
     padding: 2rem 0 5rem 0;
     background: rgba(255,255,255,0.5);
 
+    &:hover {
+        
+    }
+
     .blog {
+        position: relative;
         z-index: 10;
         text-align: justify;
         width: 73%;
@@ -23,6 +28,12 @@ body {
     .logo {
         position: absolute;
         z-index: 1;
+        left: 30%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.6;
     }
 }
 
