@@ -13,15 +13,26 @@ body {
 }
 
 .container {
+  position: relative;
   margin: 3rem 15rem 5rem 15rem;
   padding: 2rem 0 5rem 0;
   background: rgba(255, 255, 255, 0.5);
 }
 
-.blog {
+.container .blog {
+  z-index: 10;
   text-align: justify;
   width: 73%;
   margin: auto;
   font-size: 1.2rem;
+}
+
+.container .logo {
+  position: absolute;
+  z-index: 1;
+}
+
+h2 {
+  color: #911616;
 }
 /*# sourceMappingURL=style.css.map */
