@@ -75,7 +75,19 @@ body {
 }
 
 h2 {
+    margin-bottom: 0;
     color: rgb(145, 22, 22);
     text-align: center; 
     font-size: 3rem;
+}
+
+#hrTag {
+    width: 25%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    border: 0;
+    height: 1px;
+    transition: width 2s ease-out;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(145, 22, 22), rgba(0, 0, 0, 0));
 }
