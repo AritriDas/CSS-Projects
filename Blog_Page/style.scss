@@ -13,9 +13,12 @@ body {
     background: rgba(255,255,255,0.5);
 
     &:hover {
+        h2 {
+            animation: text 2s infinite;
+        }
         .logo {
             // top: -1px;
-            animation: move 1.2s infinite;
+            animation: move 2s infinite;
         }
         @keyframes move {
             0%{margin-top: 50px}
@@ -29,6 +32,21 @@ body {
             80%{margin-top: 50px}
             90%{margin-top: 25px}
             100%{margin-bottom: 50px}
+        }
+
+        @keyframes text {
+            0% {
+                opacity: 0;
+                margin-bottom: 50px;
+            }
+            30% {
+                letter-spacing: 10px;
+                margin-bottom: 50px;
+            }
+            85% {
+                letter-spacing: 5px;
+                margin-bottom: 50px;
+            }
         }
     }
 
@@ -44,14 +62,14 @@ body {
     .logo {
         position: absolute;
         z-index: 1;
-        left: 35%;
+        left: 20%;
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         opacity: 0.3;
         h1 {
-            font-size: 5rem;
+            font-size: 9rem;
         }
     }
 }

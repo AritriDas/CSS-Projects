@@ -19,9 +19,14 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 
+.container:hover h2 {
+  -webkit-animation: text 2s infinite;
+          animation: text 2s infinite;
+}
+
 .container:hover .logo {
-  -webkit-animation: move 1.2s infinite;
-          animation: move 1.2s infinite;
+  -webkit-animation: move 2s infinite;
+          animation: move 2s infinite;
 }
 
 @-webkit-keyframes move {
@@ -96,6 +101,36 @@ body {
   }
 }
 
+@-webkit-keyframes text {
+  0% {
+    opacity: 0;
+    margin-bottom: 50px;
+  }
+  30% {
+    letter-spacing: 10px;
+    margin-bottom: 50px;
+  }
+  85% {
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+  }
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+    margin-bottom: 50px;
+  }
+  30% {
+    letter-spacing: 10px;
+    margin-bottom: 50px;
+  }
+  85% {
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+  }
+}
+
 .container .blog {
   position: relative;
   z-index: 10;
@@ -109,7 +144,7 @@ body {
 .container .logo {
   position: absolute;
   z-index: 1;
-  left: 35%;
+  left: 20%;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +159,7 @@ body {
 }
 
 .container .logo h1 {
-  font-size: 5rem;
+  font-size: 9rem;
 }
 
 h2 {
