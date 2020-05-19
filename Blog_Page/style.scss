@@ -17,7 +17,6 @@ body {
             animation: text 2s infinite;
         }
         .logo {
-            // top: -1px;
             animation: move 2s infinite;
         }
         @keyframes move {
@@ -62,12 +61,12 @@ body {
     .logo {
         position: absolute;
         z-index: 1;
-        left: 20%;
+        left: 30%;
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 0.3;
+        opacity: 0.5;
         h1 {
             font-size: 9rem;
         }
