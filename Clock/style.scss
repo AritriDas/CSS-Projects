@@ -9,9 +9,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #060a1f;
+    background-image: linear-gradient(350deg, rgb(12, 9, 9), rgb(139, 139, 139)) ;
     color: whitesmoke;
 }
+// #060a1f
 
 .clock {
     .time {
