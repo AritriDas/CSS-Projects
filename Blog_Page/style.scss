@@ -11,6 +11,8 @@ body {
     margin:3rem 15rem 5rem 15rem;
     padding: 2rem 1rem 5rem 1rem;
     background: rgba(255,255,255,0.5);
+    border: rgba(255,255,255,0.5);
+    border-radius: 20px;
 
     &:hover {
         h2 {
