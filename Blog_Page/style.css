@@ -15,22 +15,25 @@ body {
 .container {
   position: relative;
   margin: 3rem 15rem 5rem 15rem;
-  padding: 2rem 0 5rem 0;
+  padding: 2rem 1rem 5rem 1rem;
   background: rgba(255, 255, 255, 0.5);
 }
 
 .container:hover .logo {
-  -webkit-animation: shake 0.5s;
-          animation: shake 0.5s;
+  top: -10px;
+  -webkit-transition: 5s;
+  transition: 5s;
+  animation-direction: reverse;
 }
 
 .container .blog {
   position: relative;
   z-index: 10;
   text-align: justify;
-  width: 73%;
+  width: 86%;
   margin: auto;
   font-size: 1.2rem;
+  font-family: 'Caladea', serif;
 }
 
 .container .logo {
