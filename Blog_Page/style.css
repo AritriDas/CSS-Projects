@@ -20,10 +20,80 @@ body {
 }
 
 .container:hover .logo {
-  top: -10px;
-  -webkit-transition: 5s;
-  transition: 5s;
-  animation-direction: reverse;
+  -webkit-animation: move 1.2s infinite;
+          animation: move 1.2s infinite;
+}
+
+@-webkit-keyframes move {
+  0% {
+    margin-top: 50px;
+  }
+  10% {
+    margin-top: 25px;
+  }
+  20% {
+    margin-bottom: 50px;
+  }
+  30% {
+    margin-bottom: 25px;
+  }
+  40% {
+    margin-top: 50px;
+  }
+  50% {
+    margin-top: 25px;
+  }
+  60% {
+    margin-bottom: 50px;
+  }
+  70% {
+    margin-bottom: 25px;
+  }
+  80% {
+    margin-top: 50px;
+  }
+  90% {
+    margin-top: 25px;
+  }
+  100% {
+    margin-bottom: 50px;
+  }
+}
+
+@keyframes move {
+  0% {
+    margin-top: 50px;
+  }
+  10% {
+    margin-top: 25px;
+  }
+  20% {
+    margin-bottom: 50px;
+  }
+  30% {
+    margin-bottom: 25px;
+  }
+  40% {
+    margin-top: 50px;
+  }
+  50% {
+    margin-top: 25px;
+  }
+  60% {
+    margin-bottom: 50px;
+  }
+  70% {
+    margin-bottom: 25px;
+  }
+  80% {
+    margin-top: 50px;
+  }
+  90% {
+    margin-top: 25px;
+  }
+  100% {
+    margin-bottom: 50px;
+  }
 }
 
 .container .blog {
@@ -39,7 +109,7 @@ body {
 .container .logo {
   position: absolute;
   z-index: 1;
-  left: 30%;
+  left: 35%;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +120,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0.6;
+  opacity: 0.3;
+}
+
+.container .logo h1 {
+  font-size: 5rem;
 }
 
 h2 {

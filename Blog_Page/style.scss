@@ -14,9 +14,21 @@ body {
 
     &:hover {
         .logo {
-            top: -10px;
-            transition: 5s;
-            animation-direction: reverse;
+            // top: -1px;
+            animation: move 1.2s infinite;
+        }
+        @keyframes move {
+            0%{margin-top: 50px}
+            10%{margin-top: 25px}
+            20%{margin-bottom: 50px}
+            30%{margin-bottom: 25px}
+            40%{margin-top: 50px}
+            50%{margin-top: 25px}
+            60%{margin-bottom: 50px}
+            70%{margin-bottom: 25px}
+            80%{margin-top: 50px}
+            90%{margin-top: 25px}
+            100%{margin-bottom: 50px}
         }
     }
 
@@ -32,12 +44,15 @@ body {
     .logo {
         position: absolute;
         z-index: 1;
-        left: 30%;
+        left: 35%;
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 0.6;
+        opacity: 0.3;
+        h1 {
+            font-size: 5rem;
+        }
     }
 }
 
