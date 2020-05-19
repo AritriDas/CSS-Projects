@@ -1,5 +1,5 @@
 body {
-  min-height: 100px;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,6 +17,11 @@ body {
   margin: 3rem 15rem 5rem 15rem;
   padding: 2rem 0 5rem 0;
   background: rgba(255, 255, 255, 0.5);
+}
+
+.container:hover .logo {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
 }
 
 .container .blog {
