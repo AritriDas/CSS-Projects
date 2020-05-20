@@ -69,3 +69,24 @@
         }
     }
 }
+.wheel {
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 2;
+    img {
+        width: 72px;
+        height: 72px;
+
+        .back-wheel {
+            left: -165px;
+            position: fixed;
+            z-index: 2;
+        }
+        .front-wheel {
+            left: 80px;
+            position: fixed;
+        }
+    }
+}
