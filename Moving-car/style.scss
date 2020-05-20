@@ -45,3 +45,15 @@
         transform: translateX(-1400px);
     }
 }
+.car {
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+
+    img {
+        width: 100%;
+    }
+}
