@@ -126,15 +126,30 @@
 .wheel img {
   width: 72px;
   height: 72px;
+  -webkit-animation: wheel 1s linear infinite;
+          animation: wheel 1s linear infinite;
 }
 
-.wheel img .back-wheel {
+@-webkit-keyframes wheel {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes wheel {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.back-wheel {
   left: -165px;
   position: fixed;
-  z-index: 2;
 }
 
-.wheel img .front-wheel {
+.front-wheel {
   left: 80px;
   position: fixed;
 }

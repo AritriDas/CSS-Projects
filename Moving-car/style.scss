@@ -78,15 +78,20 @@
     img {
         width: 72px;
         height: 72px;
-
-        .back-wheel {
-            left: -165px;
-            position: fixed;
-            z-index: 2;
-        }
-        .front-wheel {
-            left: 80px;
-            position: fixed;
-        }
+        animation: wheel 1s linear infinite; 
     }
+}
+@keyframes wheel {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.back-wheel {
+    left: -165px;
+    position: fixed;
+}
+
+.front-wheel {
+    left: 80px;
+    position: fixed;
 }
