@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: url('sky.jpg');
+    background-size: cover;
+    overflow-x: hidden;
+}
