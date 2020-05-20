@@ -74,11 +74,43 @@
   bottom: 100px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  position: absolute;
+  position: fixed;
   z-index: 2;
 }
 
 .car img {
   width: 100%;
+  -webkit-animation: car 1s linear infinite;
+          animation: car 1s linear infinite;
+}
+
+@-webkit-keyframes car {
+  100% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  50% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  0% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+}
+
+@keyframes car {
+  100% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
+  50% {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+  0% {
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -50,10 +50,22 @@
     left: 50%;
     bottom: 100px;
     transform: translateX(-50%);
-    position: absolute;
+    position: fixed;
     z-index: 2;
 
     img {
         width: 100%;
+        animation: car 1s linear infinite;
+    }
+    @keyframes car {
+        100% {
+            transform: translateY(-1px);
+        }
+        50% {
+            transform: translateY(1px);
+        }
+        0% {
+            transform: translateY(-1px);
+        }
     }
 }
