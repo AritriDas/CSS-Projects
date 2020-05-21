@@ -19,7 +19,7 @@ body {
 
 .home ul li {
   display: inline-block;
-  padding: 25px 15px;
+  padding: 30px 15px;
   color: #fff;
 }
 
@@ -28,10 +28,37 @@ body {
 }
 
 .home h2 {
-  text-align: center;
-  font-size: 4em;
+  font-size: 2em;
   color: #fff;
-  margin-top: 20%;
+  padding-top: 10px;
+  margin-left: 40px;
+}
+
+.home .input {
+  position: absolute;
+  left: 33%;
+  margin-top: 18%;
+}
+
+.home .input input {
+  padding: 0.8em;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 9px;
+  margin-right: 0px;
+}
+
+.home .input .btn {
+  padding: 0.8em;
+  background: #081b88;
+  color: white;
+  margin-left: 0px;
+  cursor: pointer;
+  border-radius: 9px;
+}
+
+.home .input .btn:hover {
+  background: #2c2ccf;
 }
 
 .animation-area {
