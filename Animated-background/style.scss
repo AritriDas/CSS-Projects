@@ -2,3 +2,40 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Quattrocento', serif;
+}
+
+.home {
+    width: 100%;
+    position: absolute;
+    ul {
+        height: 50px;
+        float: right;
+        li {
+            display: inline-block;
+            padding: 25px 15px;
+            color: #fff;
+            &:nth-child(5) {
+                padding-right: 50px;
+            }
+        }
+    }
+    h2 {
+        text-align: center;
+        font-size: 4em;
+        color: #fff;
+        margin-top: 20%;
+    }
+}
+
+.animation-area {
+    background: linear-gradient(to left, #8942a8, #ba382f);
+    width: 100%;
+    height: 100vh;
+    
+    .box-area {
+        
+    }
+}

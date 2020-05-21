@@ -2,4 +2,42 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: 'Quattrocento', serif;
+}
+
+.home {
+  width: 100%;
+  position: absolute;
+}
+
+.home ul {
+  height: 50px;
+  float: right;
+}
+
+.home ul li {
+  display: inline-block;
+  padding: 25px 15px;
+  color: #fff;
+}
+
+.home ul li:nth-child(5) {
+  padding-right: 50px;
+}
+
+.home h2 {
+  text-align: center;
+  font-size: 4em;
+  color: #fff;
+  margin-top: 20%;
+}
+
+.animation-area {
+  background: -webkit-gradient(linear, right top, left top, from(#8942a8), to(#ba382f));
+  background: linear-gradient(to left, #8942a8, #ba382f);
+  width: 100%;
+  height: 100vh;
+}
 /*# sourceMappingURL=style.css.map */
