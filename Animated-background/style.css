@@ -111,4 +111,30 @@ body {
   -webkit-animation-delay: 3.5s;
           animation-delay: 3.5s;
 }
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-800px) rotate(360deg);
+            transform: translateY(-800px) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-800px) rotate(360deg);
+            transform: translateY(-800px) rotate(360deg);
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=style.css.map */
