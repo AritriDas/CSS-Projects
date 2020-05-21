@@ -1,20 +1,163 @@
+// $primary: rgb(8, 122, 122);
+// $secondary: #ffffff;
+
+// * {
+//   margin: 0px;
+//   box-sizing: border-box;
+// }
+
+// body {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     min-height: 100vh;
+//     font-family: Calibri, sans-serif;
+//     font-size: 1rem;
+//     line-height: 1.5;
+//     font-weight: 400;
+//     background-color: $primary;
+//     color: $secondary;
+//   }
+
 $primary: rgb(8, 122, 122);
 $secondary: #ffffff;
+$shadow: wheat;
 
 * {
   margin: 0px;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    font-family: Calibri, sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: 400;
-    background-color: $primary;
-    color: $secondary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Calibri, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: darken($primary, 12%);
+  color: $secondary;
+}
+
+.cards {
+  margin: 3rem 0px;
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  padding: 2rem;
+  perspective: 1000px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 88%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: inherit;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0px 60px 60px 0px darken($shadow, 10%);
   }
+
+  .card {
+    width: calc(calc(100% / 6) - 1rem);
+    background: $secondary;
+    color: darken($primary, 5%);
+    border-radius: 20px;
+    padding: 3rem 1rem 1rem;
+    margin: 0 0.5rem;
+    text-align: center;
+    position: relative;
+    transform-origin: top center;
+    transform: rotateX(10deg);
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 5px 5px lighten($shadow, 10%);
+
+    &:hover {
+      transform: rotateX(-20deg);
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      background: darken($shadow, 10%);
+      border: 1px solid darken($primary, 20%);
+      box-shadow: 0px 0px 3px darken($primary, 20%);
+      top: 15px;
+      right: 20px;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    &:before {
+      right: auto;
+      left: 20px;
+    }
+
+    .fa {
+      font-size: 3rem;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 90%;
+      font-weight: 300;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .cards {
+    max-width: 768px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &:before {
+      width: 82%;
+    }
+
+    .card {
+      width: calc(33.33% - 1rem);
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .cards {
+    display: block;
+
+    &:before {
+      height: 170px;
+      width: 72%;
+    }
+
+    .card {
+      width: 100%;
+      margin: 0px 0px 1.5rem;
+      transform: rotateX(5deg);
+
+      &:hover {
+        transform: rotateX(-15deg);
+      }
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

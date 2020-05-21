@@ -1,5 +1,6 @@
 * {
   margin: 0px;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -19,7 +20,137 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #087a7a;
+  background-color: #044141;
   color: #ffffff;
+}
+
+.cards {
+  margin: 3rem 0px;
+  max-width: 1170px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.cards:before {
+  content: "";
+  position: absolute;
+  width: 88%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: inherit;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 0px 60px 60px 0px #efca86;
+          box-shadow: inset 0px 60px 60px 0px #efca86;
+}
+
+.cards .card {
+  width: calc(calc(100% / 6) - 1rem);
+  background: #ffffff;
+  color: #066262;
+  border-radius: 20px;
+  padding: 3rem 1rem 1rem;
+  margin: 0 0.5rem;
+  text-align: center;
+  position: relative;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transform: rotateX(10deg);
+          transform: rotateX(10deg);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -webkit-box-shadow: 0px 5px 5px #fbf2e0;
+          box-shadow: 0px 5px 5px #fbf2e0;
+}
+
+.cards .card:hover {
+  -webkit-transform: rotateX(-20deg);
+          transform: rotateX(-20deg);
+}
+
+.cards .card:before, .cards .card:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #efca86;
+  border: 1px solid #021a1a;
+  -webkit-box-shadow: 0px 0px 3px #021a1a;
+          box-shadow: 0px 0px 3px #021a1a;
+  top: 15px;
+  right: 20px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cards .card:before {
+  right: auto;
+  left: 20px;
+}
+
+.cards .card .fa {
+  font-size: 3rem;
+}
+
+.cards .card h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cards .card p {
+  font-size: 90%;
+  font-weight: 300;
+}
+
+@media (max-width: 1199px) {
+  .cards {
+    max-width: 768px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cards:before {
+    width: 82%;
+  }
+  .cards .card {
+    width: calc(33.33% - 1rem);
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .cards {
+    display: block;
+  }
+  .cards:before {
+    height: 170px;
+    width: 72%;
+  }
+  .cards .card {
+    width: 100%;
+    margin: 0px 0px 1.5rem;
+    -webkit-transform: rotateX(5deg);
+            transform: rotateX(5deg);
+  }
+  .cards .card:hover {
+    -webkit-transform: rotateX(-15deg);
+            transform: rotateX(-15deg);
+  }
+  .cards .card:last-child {
+    margin-bottom: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
