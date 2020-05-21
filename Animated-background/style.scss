@@ -50,6 +50,8 @@ body {
          height: 25px;
          background: rgba(255,255,255,0.2);
          animation: animate 20s linear infinite;
+         bottom: -140px;
+
          &:nth-child(1) {
              left: 86%;
              width: 80px;
@@ -70,7 +72,7 @@ body {
             animation-delay: 5.5s;
         }
         &:nth-child(4) {
-            left: 86%; 
+            left: 42%; 
             width: 150px;
             height: 150px;
             animation-delay: 0s;
@@ -86,6 +88,18 @@ body {
             left: 15%;
             width: 110px;
             height: 110px;
+            animation-delay: 3.5s; 
+        }
+        &:nth-child(7) {
+            left: 27%;
+            width: 50px;
+            height: 50px;
+            animation-delay: 5s; 
+        }
+        &:nth-child(8) {
+            left: 94%;
+            width: 40px;
+            height: 40px;
             animation-delay: 3.5s; 
         }
         @keyframes animate {

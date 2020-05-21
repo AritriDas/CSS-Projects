@@ -58,6 +58,7 @@ body {
   background: rgba(255, 255, 255, 0.2);
   -webkit-animation: animate 20s linear infinite;
           animation: animate 20s linear infinite;
+  bottom: -140px;
 }
 
 .box-area li:nth-child(1) {
@@ -87,7 +88,7 @@ body {
 }
 
 .box-area li:nth-child(4) {
-  left: 86%;
+  left: 42%;
   width: 150px;
   height: 150px;
   -webkit-animation-delay: 0s;
@@ -108,6 +109,22 @@ body {
   left: 15%;
   width: 110px;
   height: 110px;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+}
+
+.box-area li:nth-child(7) {
+  left: 27%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.box-area li:nth-child(8) {
+  left: 94%;
+  width: 40px;
+  height: 40px;
   -webkit-animation-delay: 3.5s;
           animation-delay: 3.5s;
 }
