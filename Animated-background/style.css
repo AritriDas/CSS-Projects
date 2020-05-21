@@ -50,7 +50,7 @@ body {
 }
 
 .box-area li {
-  position: absolute;
+  position: fixed;
   display: block;
   list-style: none;
   width: 25px;

@@ -42,13 +42,13 @@ body {
      left: 0;
      width: 100%;
      overflow: hidden;
-}
-.box-area li {
-        position: absolute;
-        display: block;
-        list-style: none;
-        width: 25px;
-        height: 25px;
-        background: rgba(255,255,255,0.2);
-        animation: animate 20s linear infinite;
+     li {
+         position: fixed;
+         display: block;
+         list-style: none;
+         width: 25px;
+         height: 25px;
+         background: rgba(255,255,255,0.2);
+         animation: animate 20s linear infinite;
+     }   
 }
