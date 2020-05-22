@@ -1,1 +1,61 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+}
+
+h2 {
+  font-size: 3.5em;
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+h2:before {
+  content: '';
+  position: absolute;
+  left: 110%;
+  width: 120%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(5%, #000), to(#000));
+  background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+  -webkit-animation: animate 5.5s linear infinite;
+          animation: animate 5.5s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: -20%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    left: 110%;
+  }
+  100% {
+    left: -20%;
+  }
+}
+
+h2 span {
+  color: #ff022c;
+}
+/*# sourceMappingURL=style.css.map */
