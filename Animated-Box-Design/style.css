@@ -83,8 +83,8 @@ body {
   border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-animation: animate 10s linear infinite;
-          animation: animate 10s linear infinite;
+  -webkit-animation: animate2 10s linear infinite;
+          animation: animate2 10s linear infinite;
 }
 
 .square span:hover:nth-child(3) {
@@ -111,6 +111,28 @@ body {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0%);
+            transform: rotate(0%);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0%);
+            transform: rotate(0%);
   }
 }
 /*# sourceMappingURL=style.css.map */

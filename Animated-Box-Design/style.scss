@@ -59,7 +59,7 @@ body {
             border: 2px solid white;
             border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
             transition: 0.5s;
-            animation: animate 10s linear infinite;
+            animation: animate2 10s linear infinite;
         }
         &:hover:nth-child(3) {
             border: none;
@@ -71,6 +71,14 @@ body {
             }
             100% {
                 transform: rotate(360deg);
+            }
+        }
+        @keyframes animate2 {
+            0% {
+                transform: rotate(360deg);
+            }
+            100% {  
+                transform: rotate(0%);
             }
         }
     }
