@@ -145,4 +145,20 @@ body {
   transition: 0.5s;
   z-index: 1000;
 }
+
+.square .content a {
+  position: relative;
+  display: inline-block;
+  border: 2px solid white;
+  margin-top: 15px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.square .content a:hover {
+  background: white;
+  color: #333;
+}
 /*# sourceMappingURL=style.css.map */
