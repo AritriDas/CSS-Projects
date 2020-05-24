@@ -123,17 +123,17 @@ body {
 
 .square:hover span:nth-child(1) {
   border: none;
-  background: rgba(0, 0, 255, 0.8);
+  background: rgba(223, 92, 153, 0.8);
 }
 
 .square:hover span:nth-child(2) {
   border: none;
-  background: rgba(0, 0, 255, 0.8);
+  background: rgba(223, 92, 153, 0.8);
 }
 
 .square:hover span:nth-child(3) {
   border: none;
-  background: rgba(0, 0, 255, 0.8);
+  background: rgba(223, 92, 153, 0.8);
 }
 
 .square .content {
