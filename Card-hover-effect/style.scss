@@ -5,9 +5,23 @@
 }
 
 body {
-    min-height: 100vh;
+    // min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #16384c;
+}
+.container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    .card {
+        position: relative;
+        max-width: 300px;
+        height: 420px;
+    }
 }
