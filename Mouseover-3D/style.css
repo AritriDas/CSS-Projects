@@ -34,6 +34,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 50px 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .container .card {
@@ -42,9 +44,18 @@ body {
   height: 300px;
   margin: 60px 0;
   background: white;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.container .card:hover {
+  -webkit-box-shadow: 0 50px 80px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 50px 80px rgba(0, 0, 0, 0.7);
 }
 
 .container .card:hover .content {
+  -webkit-transform: translateZ(20px) scaleY(1);
+          transform: translateZ(20px) scaleY(1);
   visibility: visible;
   opacity: 1;
   -webkit-transition: 0.3s ease-in-out;
@@ -61,20 +72,26 @@ body {
 
 .container .card .img-box img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .container .card .content {
   position: absolute;
   left: 30px;
   right: 30px;
-  top: 70%;
+  top: 60%;
   text-align: center;
-  background: red;
-  padding: 20px 5px;
+  background-color: rgba(73, 53, 53, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  color: white;
+  padding: 20px 10px;
   -webkit-transform: translateZ(20px) scaleY(0);
           transform: translateZ(20px) scaleY(0);
   -webkit-transform-origin: top;
           transform-origin: top;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   visibility: hidden;
   opacity: 0;
 }
