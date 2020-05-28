@@ -58,6 +58,14 @@ body {
   height: 420px;
 }
 
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
 .container .card .img-box {
   position: relative;
   height: 260px;
@@ -76,5 +84,13 @@ body {
 
 .container .card .content {
   position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */

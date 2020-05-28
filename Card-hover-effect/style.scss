@@ -32,6 +32,12 @@ body {
         transition: 0.3s ease-in-out;
         &:hover {
             height: 420px;
+            .content {
+                visibility: visible;
+                opacity: 1;
+                margin-top: -40px;
+                transition-delay: 0.3s;
+            }
         }
         .img-box {
             position: relative;
@@ -48,6 +54,13 @@ body {
         }
         .content {
             position: relative;
+            margin-top: -140px;
+            padding: 10px 15px;
+            text-align: center;
+            color: #111;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
         }
     }
 }
