@@ -62,10 +62,19 @@ body {
   position: relative;
   height: 260px;
   width: 260px;
+  left: 20px;
+  top: -60px;
+  z-index: 1;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .container .card .img-box img {
   max-width: 100%;
   border-radius: 5px;
+}
+
+.container .card .content {
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
