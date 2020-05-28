@@ -17,6 +17,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+  background: #dddbdb;
 }
 
 .container {
