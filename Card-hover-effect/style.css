@@ -14,8 +14,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(pink), to(#b61212));
-  background-image: linear-gradient(90deg, pink, #b61212);
+  background: rgba(41, 39, 39, 0.89);
 }
 
 .container {
