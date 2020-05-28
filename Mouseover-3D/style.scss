@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-self: center;
-    flex-direction: column;
+    flex-direction: row;
     padding: 50px 0;
     transform-style: preserve-3d;
     .card {
@@ -26,7 +26,7 @@ body {
         margin: 60px 0;
         background: white;
         transform-style: preserve-3d;
-
+        margin: 0 30px;
         &:hover {
             box-shadow: 0 50px 80px rgba(0,0,0,0.7);
             .content {
@@ -51,7 +51,7 @@ body {
             position: absolute;
             left: 30px;
             right: 30px;
-            top: 60%;
+            top: 65%;
             text-align: center;
             // background: rgba(224, 154, 197, 0.87);
             background-color: rgba(73, 53, 53, 0.8);
@@ -63,6 +63,9 @@ body {
             transition: 0.5s;
             visibility: hidden;
             opacity: 0;
+            h2 {
+                padding: 10px 0;
+            }
         }
     }
 }

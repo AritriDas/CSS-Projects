@@ -29,10 +29,10 @@ body {
           justify-content: center;
   -ms-flex-item-align: center;
       align-self: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 50px 0;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -46,6 +46,7 @@ body {
   background: white;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  margin: 0 30px;
 }
 
 .container .card:hover {
@@ -79,7 +80,7 @@ body {
   position: absolute;
   left: 30px;
   right: 30px;
-  top: 60%;
+  top: 65%;
   text-align: center;
   background-color: rgba(73, 53, 53, 0.8);
   -webkit-backdrop-filter: blur(20px);
@@ -94,5 +95,9 @@ body {
   transition: 0.5s;
   visibility: hidden;
   opacity: 0;
+}
+
+.container .card .content h2 {
+  padding: 10px 0;
 }
 /*# sourceMappingURL=style.css.map */
