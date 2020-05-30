@@ -17,17 +17,17 @@ body {
     display: flex;
     justify-content: center;
     align-self: center;
-    flex-direction: column;
+    // flex-direction: column;
     padding: 50px 0;
     transform-style: preserve-3d;
     .card {
         position: relative;
         width: 450px;
         height: 300px;
-        margin: 60px 0;
+        // margin: 60px 0;
         background: white;
         transform-style: preserve-3d;
-        // margin: 0 30px;
+        margin: 0 30px;
         &:hover {
             box-shadow: 0 50px 80px rgba(0,0,0,0.7);
             .content {
