@@ -51,8 +51,8 @@ body {
 }
 
 .container .card:hover .content {
-  -webkit-transform: translateZ(20px) scaleY(1);
-          transform: translateZ(20px) scaleY(1);
+  -webkit-transform: translateZ(50px) scaleY(1);
+          transform: translateZ(50px) scaleY(1);
   visibility: visible;
   opacity: 1;
   -webkit-transition: 0.3s ease-in-out;
