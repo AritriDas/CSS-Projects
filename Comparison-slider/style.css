@@ -4,4 +4,34 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container .slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container .slide-1 {
+  background: url("winters1.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container .slide-2 {
+  background: url("winters.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  left: 47%;
+}
 /*# sourceMappingURL=style.css.map */

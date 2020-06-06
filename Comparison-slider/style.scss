@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .slide {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .slide-1 {
+        background: url('winters1.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .slide-2 {
+        background: url('winters.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        left: 47%;
+    }
+}
